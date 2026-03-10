@@ -7,6 +7,7 @@ Welcome to our OYO Clone Project repository! We are a team passionate about crea
 <br>Hardik
 <br>
 <br>
+
 # Project Introduction<br>
 This repository hosts the Phase One development of our OYO Clone application. Currently, we have implemented:<br>
 •	Backend:
@@ -18,64 +19,27 @@ Initial UI design featuring a home page and login interface using tkinter.<br>
 
 Please note, this is an ongoing project and represents only the initial phase of development.
 <br>
-# Backend and Database Connectivity<br>
-To access the backend and database functionalities:<br>
-Step 1 -.	Database Connectivity:
-Our backend (backend.py) connects to the SQL database using Mysql workbench..
-Modify the database connection string  by using your password in backend.py to match your SQL setup.
-<br>
-Step2- .	Data Identifier:
-Identifier structure:
-Enter an identifier (hotel name, customer name, contact, address, booking ID, payment ID): {here you have to enter what details you are searching for} 
-For example :<br>
-•	If you enter name of hotel “hotel Taj” it will show the details of the taj hotel i.e.<br>
-o	Details:<br>
-HID: 102<br>
-Hname: Hotel Taj<br>
-Rating: 4.8<br>
-Address: Delhi<br>
-No_of_Rooms: 150<br>
-Contact_Number: 011-98765432<br>
-<br>
-HID: 107<br>
-Hname: Hotel Taj<br>
-Rating: 4.6<br>
-Address: Chennai<br>
-No_of_Rooms: 130<br>
-Contact_Number: 066-55566666<br>
-<br>
-HID: 108<br>
-Hname: Hotel Taj<br>
-Rating: 4.6<br>
-Address: Hyderabad<br>
-No_of_Rooms: 130<br>
-Contact_Number: 044-55569999<br>
-<br>
-HID: 113<br>
-Hname: Hotel Taj<br>
-Rating: 4.6<br>
-Address: Mumbai<br>
-No_of_Rooms: 130<br>
-Contact_Number: 044-55599999<br>
-<br>
-HID: 114<br>
-Hname: Hotel Taj<br>
-Rating: 4.6<br>
-Address: Gurugram<br>
-No_of_Rooms: 130<br>
-Contact_Number: 044-55566888<br>
-<br>
-•	Entering customer name “ Rashmi” , it will show the customer details i.e.<br>
-o	Details:<br>
-CID: 7<br>
-Cname: Rashmi<br>
-username: Rashmi299405<br>
-passwords: 12635<br>
-contact: 7778889999<br>
-Address: Delhi<br>
-Registration_Date: 2022-07-01<br>
-<br>
-# Database Overview
+
+## Setup Instructions
+
+### 1. Install Requirements
+Install the required dependencies using pip:
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Database Connectivity
+Our application connects to a MySQL database.
+1. Use MySQL workbench and run the final SQL script located in the `archive/FINAL DATABASE OF PROJECT.sql` to setup your tables.
+2. Edit `config.py` and modify the connection details (specifically your `DB_PASSWORD`) to match your local MySQL configuration.
+
+### 3. Running the Application
+Run the main file to start the frontend interface:
+```bash
+python main.py
+```
+
+## Database Overview
 We have structured our SQL database to support the following functionalities:<br>
 •	Tables:<br>
 o	Hotels: <br>
