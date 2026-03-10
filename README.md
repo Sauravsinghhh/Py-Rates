@@ -1,61 +1,76 @@
-# Full-Tutorial-of-OYO-App-Development
-Team Introduction<br>
-Welcome to our OYO Clone Project repository! We are a team passionate about creating a streamlined accommodation booking experience. Let us introduce ourselves:
-<br>•	Team Members:
-<br>Saurav Singh
-<br>	Rashmi
-<br>Hardik
-<br>
-<br>
+# 🏨 Py-Rates: OYO Clone Project
 
-# Project Introduction<br>
-This repository hosts the Phase One development of our OYO Clone application. Currently, we have implemented:<br>
-•	Backend:
- Developed in Python, our backend handles the core functionalities of our application.<br>
-•	Database: 
-Utilizing SQL, we've designed a database schema to store essential data for bookings and users.<br>
-•	Frontend: 
-Initial UI design featuring a home page and login interface using tkinter.<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-blue?style=for-the-badge)
 
-Please note, this is an ongoing project and represents only the initial phase of development.
-<br>
+Py-Rates is a streamlined OYO Clone application designed to provide a conceptual booking experience. It features a robust Python backend, a relational database schema for managing stays, and an interactive Tkinter-based frontend.
 
-## Setup Instructions
+---
 
-### 1. Install Requirements
-Install the required dependencies using pip:
+## ✨ Features
+
+- **User Authentication**: Secure login interface for customers.
+- **Hotel Discovery**: Browse a comprehensive list of hotels.
+- **Detailed Profiles**: View ratings, city location, room availability, and contact info.
+- **Booking Management**: Real-time tracking of check-in and check-out dates.
+- **Seamless UX**: Intuitive taskbar for Home, Bookings, Search, and Help.
+- **Flexible Payments**: Conceptual support for Cards, UPI, and Pay-on-Visit.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Prerequisites
+Ensure you have Python installed on your system.
+
+### 2. Install Dependencies
+Run the following command to install required libraries like `Pillow` and `mysql-connector-python`:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 2. Database Connectivity
-Our application connects to a MySQL database.
-1. Use MySQL workbench and run the final SQL script located in the `archive/FINAL DATABASE OF PROJECT.sql` to setup your tables.
-2. Edit `config.py` and modify the connection details (specifically your `DB_PASSWORD`) to match your local MySQL configuration.
+### 3. Database Setup
+1. Open **MySQL Workbench**.
+2. Run the SQL initialization script found in:  
+   `archive/FINAL DATABASE OF PROJECT.sql`
+3. This will create the necessary `OYO` database and tables.
 
-### 3. Running the Application
-Run the main file to start the frontend interface:
+### 4. Configuration
+Before running, update your credentials:
+1. Open `config.py`.
+2. Update `DB_PASSWORD` with your local MySQL password.
+
+### 5. Launch
+Start the application by running:
 ```bash
 python main.py
 ```
 
-## Database Overview
-We have structured our SQL database to support the following functionalities:<br>
-•	Tables:<br>
-o	Hotels: <br>
-Stores hotel information including name, address, and contact and ratings of the hotel.<br> 
-o	Customer: <br>
-Manages customer data such as name , contact information and registration date.<br>
-o	Booking: <br>
-Tracks booking details with references to customers and hotels.<br>
-o	Room: <br>
-Provides the details of every room.<br>
-o	Payment: <br>
-Account for the payment details reference to the customer and booking.<br>
+---
 
-# Frontend Overview<br>
-<br>
-Our frontend (tkinter-based) demonstrates the user interface conceptually. <br>
-•	Limitations:<br>
-The frontend UI in this repository is for demonstration purposes.
-Direct functionality may not work on your local machine without appropriate requirements of the interface , backend and database setup.
+## 📂 Project Structure
+
+- `main.py`: The entry point for the Tkinter frontend.
+- `config.py`: Centralized database configuration.
+- `assets/`: UI icons and background images.
+- `archive/`: Legacy prototypes and SQL templates.
+- `requirements.txt`: Project dependencies.
+
+---
+
+## 🤝 The Team
+
+Developed with ❤️ by:
+- **Saurav Singh**
+- **Rashmi**
+- **Hardik**
+
+---
+
+## 📝 Ongoing Development
+This project represents Phase One of development. Future updates will include live search filters, actual payment gateway integration, and a mobile-responsive web version.
+
+---
+*Py-Rates - Simplifying Stays.*
+
